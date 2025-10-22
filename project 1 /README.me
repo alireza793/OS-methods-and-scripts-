@@ -1,0 +1,29 @@
+# 🗂️ simple_ls.py
+
+A small and simple Python script that mimics the basic behavior of the Linux `ls` command.  
+It lists all files and folders in a given directory using only built-in Python libraries.
+
+---
+
+## 🚀 Features
+- Lists all files and directories in a given path  
+- Detects and labels directories with `[DIR]`  
+- Handles missing paths and permission errors gracefully  
+- Works on Linux, macOS, Windows, and Termux  
+
+---
+
+## 🧠 How It Works
+The script:
+1. Accepts a directory path as a command-line argument (`sys.argv[1]`).  
+2. If no argument is provided, it uses the current working directory (`os.getcwd()`).  
+3. Uses `os.listdir()` to get all items inside the folder.  
+4. Prints their names and indicates which ones are directories.  
+
+---
+
+## 💻 Usage
+
+### 1. Run in the current directory:
+```bash
+python simple_ls.py
